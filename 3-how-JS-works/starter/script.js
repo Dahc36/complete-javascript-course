@@ -1,19 +1,20 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
 
+function methodDeclaration(){
+    console.log(this);
+}
 
+var methodExpression = function(){
+    console.log(this);
+}
 
+var obj = {
+    name: 'objName',
+    method: methodExpression
+};
 
-
-
-
-
-
-
-
-
-
-
+obj.method();
 
 
 
